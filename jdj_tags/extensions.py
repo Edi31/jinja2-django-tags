@@ -86,7 +86,8 @@ class DjangoI18n(Extension):
         With context: {{ pgettext('Hello World', 'another example') }}
 
     """
-    tags = set(['trans', 'blocktrans'])
+    #tags = set(['trans', 'blocktrans'])
+    tags = set(['blocktrans'])
 
     def __init__(self, environment):
         super(DjangoI18n, self).__init__(environment)
